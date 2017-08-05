@@ -1,7 +1,0 @@
-eclipse.m2.defaultRuntime=maven3.5.0
-eclipse.m2.globalSettingsFile=/usr/local/Cellar/maven/3.5.0/libexec/conf/settings.xml
-eclipse.m2.runtimes=maven3.5.0
-eclipse.m2.runtimesNodes/maven3.5.0/location=/usr/local/Cellar/maven/3.5.0/libexec
-eclipse.m2.runtimesNodes/maven3.5.0/type=EXTERNAL
-eclipse.m2.userSettingsFile=/usr/local/Cellar/maven/3.5.0/libexec/conf/settings.xml
-eclipse.preferences.version=1
