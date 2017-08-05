@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+    <!-- 单文件配置
+    <context:property-placeholder location="jdbc.properties"/>  
+    -->  
+    <!-- 通配符使用多文件 -->
+    <context:property-placeholder location="classpath*:*.properties"/>
+    <!-- 配置一个 bean -->
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+	    <property name="driverClassName" value="${test.driver}"/>
+	    <property name="url" value="${test.url}"/>
+	    <property name="username" value="${test.username}"/>
+	    <property name="password" value="${test.password}"/>
+	</bean>
+	
+</beans>

@@ -1,0 +1,11 @@
+package com.dnsoft.springlessons.lesson3JUnit;
+
+public class DVDPlayer implements MediaPlayer {
+
+	@Override
+	public void play() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

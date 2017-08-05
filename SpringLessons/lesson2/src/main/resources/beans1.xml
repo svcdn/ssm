@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+    <!-- 
+    	<context:component-scan base-package="cn.edu.dao"/>
+		表明cn.edu.dao包及其子包中，如果某个类的头上带有特定的注解
+		@Component，@Repository，@Service，@Controller，就会将这个对象作为Bean注册进spring容器 
+	-->
+	<context:component-scan base-package="com.dnsoft.springlessons.lesson2"></context:component-scan>
+	
+</beans>

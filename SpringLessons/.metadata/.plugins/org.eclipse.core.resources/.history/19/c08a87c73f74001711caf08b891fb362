@@ -1,0 +1,13 @@
+package com.dnsoft.springlessons.lesson3JUnit;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.FilterType;
+
+@Configuration
+@ComponentScan(excludeFilters={
+		  @ComponentScan.Filter(type=FilterType.ASSIGNABLE_TYPE, value=CDPlayer.class)
+		  })
+public class CDPlayerConfig {
+
+}
